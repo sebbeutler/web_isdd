@@ -1,0 +1,64 @@
+/* CSS */
+header h1:before {
+    font-family: "Font Awesome 5 Free";
+    margin-right: 5px;
+}
+
+body {
+    font-family: American Typewriter, serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centrer le contenu */
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+}
+
+.left-column,
+.right-column {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 3px solid #e0e0e0; /* Ajouter une bordure */
+    border-radius: 5px; /* Ajouter des coins arrondis */
+    flex: 1;
+}
+
+
+section:before {
+    font-family: "Font Awesome 5 Free";
+    margin-right: 5px;
+}
+
+#coordonnees h2:before {
+    content: "\f0e0"; /* Code de l'icône Font Awesome */
+    font-family: "Font Awesome 5 Free";
+}
+
+#formation h2:before {
+    content: "\f19d"; /* Code de l'icône Font Awesome */
+    font-family: "Font Awesome 5 Free";
+}
+
+#experience h2:before {
+    content: "\f0b1"; /* Code de l'icône Font Awesome */
+    font-family: "Font Awesome 5 Free";
+}
+
+#competences h2:before {
+    content: "\f085"; /* Code de l'icône Font Awesome */
+    font-family: "Font Awesome 5 Free";
+}
+
+#loisirs h2:before {
+    content: "\f005"; /* Code de l'icône Font Awesome */
+    font-family: "Font Awesome 5 Free";
+}
+
