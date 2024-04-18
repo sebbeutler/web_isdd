@@ -1,8 +1,9 @@
 .card {
-    margin: 20px auto;
+    margin: 20px;
     padding: 20px;
     width: 90%;
     max-width: 800px;
+    max-height: 800px;
     display: grid;
     grid-template-rows: 20px 1fr 20px;
     border-radius: 10px;

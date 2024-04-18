@@ -1,9 +1,16 @@
 .carousel {
+  padding: 40px;
   position: relative;
   overflow: hidden;
   margin: 20px auto;
   max-width: 800px;
-  border: 3px solid #ccc;
+  transform: scale(0.8);
+  border: 1px solid #9b9a9a6e;
+  backdrop-filter: blur(30px);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  box-sizing: border-box;
+  color-scheme: black;
 }
 
 .slides-container {

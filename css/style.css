@@ -11,7 +11,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(90deg, rgba(177,139,203,1) 0%, rgba(221,128,128,1) 51%, rgba(119,184,236,1) 100%);
+    background: linear-gradient(90deg, rgba(177, 139, 203, 1) 0%, rgba(221, 128, 128, 1) 51%, rgba(119, 184, 236, 1) 100%);
     height: auto;
     color: white;
 }
@@ -35,15 +35,6 @@ header {
     height: 100vh;
 }
 
-section {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 50vh;
-    padding: 100px 10vw;
-}
-
 .hidden {
     opacity: 0;
     filter: blur(5px);
@@ -55,12 +46,6 @@ section {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
-}
-
-@media(prefers-reduced-motion) {
-    .hidden {
-        transition: none;
-    }
 }
 
 .arrow {
@@ -117,4 +102,82 @@ section {
         opacity: 0;
         transform: translate(3vw, 3vw) rotate(45deg);
     }
+}
+
+#section-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
+    max-width: 800px;
+}
+
+section h2 {
+    flex: 1;
+    margin-right: 20px;
+}
+
+section p {
+    flex: 2;
+    margin-left: 20px;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    left: 33.33%;
+    top: 20px;
+    bottom: 20px;
+    border-left: 1px solid #ccc;
+}
+
+#bonus {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+footer {
+    background-color: #282828;
+    /* Dark background for the footer */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 30px;
+    /* Size of the icons */
+    height: auto;
+}
+
+.langues img {
+    width: 32px;
+    height: auto;
+}
+
+.reseau li {
+    display: inline;
 }

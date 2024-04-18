@@ -45,4 +45,4 @@ function goToSlide(index) {
 slides[currentIndex].classList.add("active");
 
 // Timer pour passer automatiquement à la diapositive suivante toutes les 3 secondes
-setInterval(nextSlide, 5000);
+setInterval(nextSlide, 9000);

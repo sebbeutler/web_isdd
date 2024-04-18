@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/drug-icon.ico">
     <meta charset="UTF-8">
     <title>Master ISDD</title>
     <link rel="stylesheet" href="css/style.css">
@@ -72,7 +72,7 @@
                 <use id="overlay" xlink:href="#backdrop" style="filter: url(#blur);" />
             </g>
 
-            <use xlink:href="#glass" style="fill:none;stroke:black;border-radius: 6px;" />
+            <use xlink:href="#glass" style="fill:none;stroke:#ccc;border-radius: 6px;" />
             <foreignObject x="50%" y="50%" width="60%" height="30%" style="transform: translate(-30%, -15%);">
                 <div xmlns="http://www.w3.org/1999/xhtml"
                     style="display: flex; justify-content: center; align-items: center; height: 100%;">
@@ -130,78 +130,145 @@
         </ul>
     </div>
 
-    <div class="card">
-        <div class="card__icon"></div>
-        <div class="card__content">
-            <h2>Science Trivia</h2>
-            <div id="questionIndex"></div>
-            <div id="question" class="question"></div>
-            <div id="options" class="options"></div>
-            <div id="progress">
-                <div>
-                    <div></div>
-                </div>
-                <div>
-                    <div></div>
-                </div>
-                <div>
-                    <div></div>
-                </div>
-                <div>
-                    <div></div>
-                </div>
-                <div>
-                    <div></div>
-                </div>
-            </div>
-            <p id="result"></p>
-            <div style="display: flex; text-align: center; gap: 10px;">
-                <button id="getQuestionBtn" onclick="getQuestion()">Get a Trivia Question</button>
-                <div id="finalScore" class="hidden"></div>
-            </div>
-        </div>
+    <div id="section-container">
+
+        <section id="Presentation" class="hidden">
+            <h2>Presentation</h2>
+            <p>Les parcours « in silico Drug Design » - Design des Molécules Bioactives et - Modélisation des
+                Macromolécules, du master Bio-Informatique offrent une solide formation interdisciplinaire, à
+                l'interface de la biologie, de la chimie et de l'informatique.
+                Unique en France et en Europe, ils dotent les étudiant.e.s des compétences indispensables à la recherche
+                in silico de molécules thérapeutiques et à la modélisation computationnelle des macromolécules. Ils
+                répondent à une demande du secteur privé (entreprises pharmaceutiques, biotechnologie et de santé
+                publique) et du secteur académique, pour former des étudiants dans ce domaine de recherche en plein
+                essor.</p>
+        </section>
+
+        <section class="hidden">
+            <h2>DEUX PARCOURS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum assumenda officia neque doloremque quidem
+                dignissimos est alias velit consequuntur, ad, illo praesentium! In nemo libero veniam dignissimos
+                debitis
+                consequuntur consectetur!</p>
+        </section>
+
+        <section class="hidden">
+            <h2>Organisation</h2>
+            <p>Cette formation à visée internationale repose sur des conventions avec les universités de Strasbourg, de
+                Paris Descartes et depuis 2015, sur un accord de double diplôme avec l'Université degli Studi di Milano
+                en Italie.
+
+                Il propose deux parcours recherche internationaux complémentaires incluant chacun au moins un semestre à
+                l'étranger :
+
+                1. Pour le parcours ISDD-MACROMOLECULES (RECHERCHE), les différents semestres 1, 2 et 3 sont effectués à
+                l'université Paris Cité (avec la possibilité d'effectuer le semestre 2 à l'Université degli Studi di
+                Milano en Erasmus) et le semestre 4 en stage d'initiation à la recherche est fortement encouragé à
+                l'étranger.
+                Dans le cadre du double diplôme pour les étudiants russes, ceux-ci effectueront leur 1ère année de
+                master à l'Université de Sechenov (Moscou), le S3 à l'université Paris Cité et le S4 en stage à
+                l'Université de leurs choix.
+                Dans le cadre du double diplôme, les étudiants de Paris pourront effectuer leur semestre 2 et/ou leur
+                semestre 4 de stage à l'Université de Sechenov (Moscou).
+                Le double diplôme franco-russe avec l'Université de Sechenov est actuellement en suspens (l'Université
+                Paris Cité a décidé de suspendre ses accords avec les universités de Russie, en raison du conflit
+                actuel). Pour le parcours ISDD-MACROMOLECULES (ALTERNANCE), les cours ont lieu à l'université Paris Cité
+                avec alternance de périodes en entreprises.
+
+                2. Le parcours ISDD-MOLECULES BIOACTIVES (RECHERCHE) propose le semestre 1 à l'université de Strasbourg,
+                le semestre 2 à l'Université degli Studi di Milano puis le semestre 3 à l'université Paris Cité et un
+                dernier semestre de stage en France ou à l'étranger. Dans le cadre du double diplôme pour les étudiants
+                italiens, ceux-ci effectueront leur 1ère année de master à l'Université degli Studi di Milano, le S3 à
+                l'université Paris Cité et le S4 en stage à l'Université degli Studi di Milano.</p>
+        </section>
+
+        <section class="hidden">
+            <h2>Débouchés</h2>
+            <p>Cette formation offre de nombreux débouchés avec une très forte demande sur le marché de l'emploi.
+                Elle forme des professionnels(les) du privé et du public, acteurs de la recherche par des approches in
+                silico dans le domaine de l'innovation thérapeutique, orienté vers la validation de cibles
+                thérapeutiques et le développement de molécules pharmacologiques. Les compétences acquises par les
+                étudiants lors des différents modules et de leur projets commun, leur offrent des débouchés dans la
+                phase initiale de rationalisation et d'optimisation de la découverte de nouvelles molécules candidates
+                médicaments, dans la maîtrise (et/ou le développement) des méthodologies et des logiciels permettant
+                d'accélérer le processus de recherche des nouvelles molécules candidates médicaments.
+                Il y a de nombreuses opportunités de poursuite en doctorat en France ou à l'international, mais aussi
+                des possibilités d'insertion directe en milieu professionnel (industrie pharmaceutique ou EPST) après le
+                Master (ou au cours du parcours en alternance). Elle offre des débouchés dans des industries
+                pharmaceutiques et des « jeunes pousses », des laboratoires de recherche nationaux ou internationaux,
+                privés ou académiques ou leur permet de poursuivre leurs études en effectuant un doctorat français ou
+                international. Les étudiants obtiennent des postes d'ingénieur, assistant de recherche ou manager
+                directement après le M2 ou en tant que chef de projet, chercheur, responsable de plate-forme, après une
+                thèse.</p>
+        </section>
     </div>
 
-    <div class="carousel">
-        <div class="slides-container">
-            <img src="img/carousel5.jpg" alt="Macromolécule">
-            <img src="img/carousel1.jpg" alt="Protéine et ligand">
-            <img src="img/carousel2.jpg" alt="Pharmacophore">
-            <img src="img/carousel3.jpg" alt="Analyse MD">
-            <img src="img/carousel4.jpg" alt="Alignement Multiple de séquences">
+    <div id="bonus">
+
+        <div class="card">
+            <div class="card__icon"></div>
+            <div class="card__content">
+                <h2>Science Trivia</h2>
+                <div id="questionIndex"></div>
+                <div id="question" class="question"></div>
+                <div id="options" class="options"></div>
+                <div id="progress">
+                    <div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                    </div>
+                </div>
+                <p id="result"></p>
+                <div style="display: flex; text-align: center; gap: 10px;">
+                    <button id="getQuestionBtn" onclick="getQuestion()">Get a Trivia Question</button>
+                    <div id="finalScore" class="hidden"></div>
+                </div>
+            </div>
         </div>
-        <button class="prev-btn">Prev</button>
-        <button class="next-btn">Next</button>
+
+        <div class="carousel">
+            <div class="slides-container">
+                <img src="img/carousel5.jpg" alt="Macromolécule">
+                <img src="img/carousel1.jpg" alt="Protéine et ligand">
+                <img src="img/carousel2.jpg" alt="Pharmacophore">
+                <img src="img/carousel3.jpg" alt="Analyse MD">
+                <img src="img/carousel4.jpg" alt="Alignement Multiple de séquences">
+            </div>
+            <button class="prev-btn">←</button>
+            <button class="next-btn">→</button>
+        </div>
+
     </div>
-
-    <section id="Presentation" class="hidden">
-        <h2>Presentation</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum assumenda officia neque doloremque quidem
-            dignissimos est alias velit consequuntur, ad, illo praesentium! In nemo libero veniam dignissimos debitis
-            consequuntur consectetur!</p>
-    </section>
-
-    <section class="hidden">
-        <h2>DEUX PARCOURS</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum assumenda officia neque doloremque quidem
-            dignissimos est alias velit consequuntur, ad, illo praesentium! In nemo libero veniam dignissimos debitis
-            consequuntur consectetur!</p>
-    </section>
-
-    <section class="hidden">
-        <h2>Organisation</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum assumenda officia neque doloremque quidem
-            dignissimos est alias velit consequuntur, ad, illo praesentium! In nemo libero veniam dignissimos debitis
-            consequuntur consectetur!</p>
-    </section>
-
-    <section class="hidden">
-        <h2>Débouchés</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum assumenda officia neque doloremque quidem
-            dignissimos est alias velit consequuntur, ad, illo praesentium! In nemo libero veniam dignissimos debitis
-            consequuntur consectetur!</p>
-    </section>
-    <footer></footer>
+    <footer>
+        <div class="langues">
+            <img src="img/drapeau-francais.png" alt="drapeau france">
+            <img src="img/drapeau-uk.png" alt="drapeau uk">
+            <img src="img/drapeau-espagne.png" alt="drapeau espagne">
+        </div>
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="img/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+              <img src="img/twitter-icon.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="img/instagram-icon.png" alt="Instagram">
+            </a>
+            <!-- Add more social links as needed -->
+          </div>
+    </footer>
 </body>
 
 </html>
