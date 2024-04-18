@@ -1,0 +1,63 @@
+body {
+    background-image: linear-gradient(40deg, hsl(240deg 56% 48%) 0%, hsl(250deg 48% 49%) 10%, hsl(260deg 40% 49%) 24%, hsl(271deg 34% 50%) 42%, hsl(285deg 28% 50%) 57%, hsl(305deg 24% 50%) 68%, hsl(325deg 29% 54%) 75%, hsl(340deg 34% 58%) 81%, hsl(354deg 40% 62%) 85%, hsl(358deg 39% 63%) 89%, hsl(353deg 31% 62%) 92%, hsl(345deg 22% 61%) 94%, hsl(330deg 14% 60%) 96%, hsl(284deg 9% 60%) 97%, hsl(232deg 12% 62%) 98%, hsl(212deg 22% 61%) 99%, hsl(204deg 32% 60%) 100%, hsl(200deg 41% 58%) 100%);
+    background-repeat: no-repeat;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    margin-bottom: 30px;
+    background: #f8f8f885;
+    border-radius: 30px;
+    padding: 20px;
+    max-width: 70vw;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+button,
+input[type="file"] {
+    background: #f8f8f887;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

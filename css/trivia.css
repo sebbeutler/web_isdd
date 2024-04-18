@@ -1,0 +1,104 @@
+.card {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    display: grid;
+    grid-template-rows: 20px 1fr 20px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+    background: radial-gradient(#76b2fe, #b69efe);
+}
+
+.card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+
+.card__icon {
+    background-image: url("../img/bolt.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__content {
+    color: #ffffff;
+}
+
+.card button {
+    background-color: #6200EE;
+    color: #FFFFFF;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.card button:hover,
+.card button:focus {
+    background-color: #3700B3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
+}
+
+.card button:disabled {
+    background-color: #9E9E9E;
+    cursor: not-allowed;
+}
+
+.options button {
+    opacity: 0;
+    max-height: 0;
+    transition: max-height 1.5s ease, opacity 1.5s ease;
+    overflow: hidden;
+}
+
+.options button.show {
+    max-height: 100px;
+    opacity: 1;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+#result,
+#finalScore {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#progress {
+    display: none;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#progress>div {
+    height: 3px;
+    border: 2px solid #CCC;
+    background-color: white;
+    width: 20%;
+    border-radius: 0.3em;
+    position: relative;
+    overflow: hidden;
+}
+
+#progress>div>div {
+    height: 100%;
+    width: 0;
+    background-color: #4CAF50;
+    transition: width 2s ease;
+}

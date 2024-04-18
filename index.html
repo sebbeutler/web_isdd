@@ -4,11 +4,15 @@
 <head>
     <link rel="icon" href="favicon.ico">
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Master ISDD</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/trivia.css">
+    <link rel="stylesheet" href="css/carousel.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/2.0.0/kute.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="navigation.css">
-    <script defer type="text/javascript" src="main.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/trivia.js"></script>
+    <script defer src="js/carousel.js"></script>
 </head>
 
 <body>
@@ -22,7 +26,7 @@
                     <feGaussianBlur stdDeviation="163" result="effect1_foregroundBlur"></feGaussianBlur>
                 </filter>
             </defs>
-            <g id="backdrop" >
+            <g id="backdrop">
                 <g filter="url(#blur1)">
                     <circle id="circle1" cx="627" cy="445" fill="#00CC99" r="363"></circle>
                     <circle id="circle2" cx="664" cy="75" fill="#6600FF" r="363"></circle>
@@ -86,20 +90,20 @@
     </header>
     <nav>
         <div class="logo">
-            <h1>MASTER: IN SILICO DRUG DESIGN</h1>
+            <span>MASTER: IN SILICO DRUG DESIGN</span>
         </div>
         <ul>
             <li>
-                <a href="#">Home</a>
+                <a href="#">Presentation</a>
             </li>
             <li>
-                <a href="#">Services</a>
+                <a href="#">Parcours</a>
             </li>
             <li>
-                <a href="#">Blog</a>
+                <a href="formulaire.html">Candidater</a>
             </li>
             <li>
-                <a href="contact.html">Contact Us</a>
+                <a href="contact.html">Nous Contacter</a>
             </li>
         </ul>
         <div class="hamburger">
@@ -112,18 +116,62 @@
     <div class="menubar">
         <ul>
             <li>
-                <a href="#">Home</a>
+                <a href="#">Presentation</a>
             </li>
             <li>
-                <a href="#">Services</a>
+                <a href="#">Parcours</a>
             </li>
             <li>
-                <a href="#">Blog</a>
+                <a href="formulaire.html">Candidater</a>
             </li>
             <li>
-                <a href="contact.html">Contact Us</a>
+                <a href="contact.html">Nous Contacter</a>
             </li>
         </ul>
+    </div>
+
+    <div class="card">
+        <div class="card__icon"></div>
+        <div class="card__content">
+            <h2>Science Trivia</h2>
+            <div id="questionIndex"></div>
+            <div id="question" class="question"></div>
+            <div id="options" class="options"></div>
+            <div id="progress">
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+            </div>
+            <p id="result"></p>
+            <div style="display: flex; text-align: center; gap: 10px;">
+                <button id="getQuestionBtn" onclick="getQuestion()">Get a Trivia Question</button>
+                <div id="finalScore" class="hidden"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel">
+        <div class="slides-container">
+            <img src="img/carousel5.jpg" alt="Macromolécule">
+            <img src="img/carousel1.jpg" alt="Protéine et ligand">
+            <img src="img/carousel2.jpg" alt="Pharmacophore">
+            <img src="img/carousel3.jpg" alt="Analyse MD">
+            <img src="img/carousel4.jpg" alt="Alignement Multiple de séquences">
+        </div>
+        <button class="prev-btn">Prev</button>
+        <button class="next-btn">Next</button>
     </div>
 
     <section id="Presentation" class="hidden">
