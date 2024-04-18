@@ -7,21 +7,22 @@
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/2.0.0/kute.min.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navigation.css">
     <script defer type="text/javascript" src="main.js"></script>
 </head>
 
 <body>
     <header>
-        <svg id="header-svg" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+        <svg id="header-svg" viewbox="0 0 960 540" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="width:100%; height:100%;">
             <defs>
-                <filter id="blur1" x="-10%" y="-10%" width="120%" height="120%">
+                <filter id="blur1">
                     <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
                     <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
                     <feGaussianBlur stdDeviation="163" result="effect1_foregroundBlur"></feGaussianBlur>
                 </filter>
             </defs>
-            <g id="backdrop">
+            <g id="backdrop" >
                 <g filter="url(#blur1)">
                     <circle id="circle1" cx="627" cy="445" fill="#00CC99" r="363"></circle>
                     <circle id="circle2" cx="664" cy="75" fill="#6600FF" r="363"></circle>
@@ -57,7 +58,8 @@
             </g>
 
             <clipPath id="clip">
-                <rect id="glass" x="50%" y="50%" rx="15" width="60%" height="30%" style="transform: translate(-30%, -15%);"/>
+                <rect id="glass" x="50%" y="50%" rx="15" width="60%" height="30%"
+                    style="transform: translate(-30%, -15%);" />
             </clipPath>
             <filter id="blur">
                 <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blurred" />
@@ -69,14 +71,62 @@
             <use xlink:href="#glass" style="fill:none;stroke:black;border-radius: 6px;" />
             <foreignObject x="50%" y="50%" width="60%" height="30%" style="transform: translate(-30%, -15%);">
                 <div xmlns="http://www.w3.org/1999/xhtml"
-                style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    style="display: flex; justify-content: center; align-items: center; height: 100%;">
                     <h1>Master In Silico Drug Design</h1>
                 </div>
             </foreignObject>
         </svg>
+        <a href="#Presentation">
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </a>
     </header>
-    <nav></nav>
-    <section class="hidden">
+    <nav>
+        <div class="logo">
+            <h1>MASTER: IN SILICO DRUG DESIGN</h1>
+        </div>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </nav>
+
+    <div class="menubar">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+
+    <section id="Presentation" class="hidden">
         <h2>Presentation</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum assumenda officia neque doloremque quidem
             dignissimos est alias velit consequuntur, ad, illo praesentium! In nemo libero veniam dignissimos debitis
